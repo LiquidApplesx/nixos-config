@@ -23,6 +23,11 @@
       fsType = "vfat";
       options = [ "fmask=0077" "dmask=0077" ];
     };
+  
+  fileSystems."/home/kari/Games" =
+    { device = "/dev/disk/by-uuid/85840f0f-0427-4897-a7ea-8fab0ade043e";
+      fsType = "ext4"
+    };
 
   swapDevices =
     [ { device = "/dev/disk/by-uuid/81dae43c-8a95-4df5-bdc4-dce9203715f4"; }
