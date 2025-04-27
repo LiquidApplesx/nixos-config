@@ -9,6 +9,7 @@
     ## Utils
     gamemode
     gamescope
+    mangohud
     protontricks
     # inputs.nix-gaming.packages.${pkgs.system}.wine-ge
     steam-run
@@ -30,9 +31,11 @@
     crispy-doom
 
     ## Emulation
+    azahar 
     sameboy
     snes9x
     cemu
     dolphin-emu
+    torzu
   ];
 }
