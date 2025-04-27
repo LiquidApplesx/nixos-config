@@ -26,7 +26,7 @@
   
   fileSystems."/home/kari/Games" =
     { device = "/dev/disk/by-uuid/85840f0f-0427-4897-a7ea-8fab0ade043e";
-      fsType = "ext4"
+      fsType = "ext4";
     };
 
   swapDevices =
