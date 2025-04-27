@@ -33,6 +33,7 @@
   environment.systemPackages = with pkgs; [
     wget
     git
+    nixvim.packages.${system}.default
   ];
 
   time.timeZone = "America/New_York";

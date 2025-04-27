@@ -14,10 +14,7 @@
 
     hyprland.url = "github:hyprwm/Hyprland";
     
-    nixvim = {
-      url = "github:nix-community/nixvim";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
+    nixvim.url = "github:mikaelfangel/nixvim-config"
 
     home-manager = {
       url = "github:nix-community/home-manager";
@@ -48,7 +45,7 @@
   };
 
   outputs =
-    { nixpkgs, nixvim, self, ... }@inputs:
+    { nixpkgs, self, ... }@inputs:
     let
       username = "kari";
       system = "x86_64-linux";
@@ -57,21 +54,7 @@
         config.allowUnfree = true;
       };
       lib = nixpkgs.lib;
-      forAllSystems = nixpkgs.lib.genAttrs systems;
     in
-    {
-      packages = forAllSystems (
-        system:
-        let
-        nixvim' = nixvim.legacyPackages.${system};
-        nvim = nixvim'.makeNixvim config;
-        in
-        {
-          inherit nvim;
-          default = nvim;
-        }
-      );
-    };
     {
       nixosConfigurations = {
         desktop = nixpkgs.lib.nixosSystem {
