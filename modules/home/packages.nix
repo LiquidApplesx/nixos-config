@@ -28,6 +28,7 @@ in
     jq                                # JSON processor
     killall
     libnotify
+    lolcat
     man-pages                         # extra man pages
     mimeo
     mpv                               # video player
@@ -39,6 +40,8 @@ in
     onefetch                          # fetch utility for git repo
     pamixer                           # pulseaudio command line mixer
     playerctl                         # controller for media players
+    protonmail-desktop                # email client
+    protonup-qt                       # Proton-GE-Custom installer
     poweralertd
     programmer-calculator
     ripgrep                           # grep replacement
