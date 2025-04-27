@@ -14,7 +14,7 @@
 
     hyprland.url = "github:hyprwm/Hyprland";
     
-    nixvim.url = "github:mikaelfangel/nixvim-config"
+    nixvim.url = "github:mikaelfangel/nixvim-config";
 
     home-manager = {
       url = "github:nix-community/home-manager";
