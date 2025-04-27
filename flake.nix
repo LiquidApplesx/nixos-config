@@ -48,7 +48,7 @@
   };
 
   outputs =
-    { nixpkgs, self, ... }@inputs:
+    { nixpkgs, nixvim, self, ... }@inputs:
     let
       username = "kari";
       system = "x86_64-linux";
@@ -57,7 +57,21 @@
         config.allowUnfree = true;
       };
       lib = nixpkgs.lib;
+      forAllSystems = nixpkgs.lib.genAttrs systems;
     in
+    {
+      packages = forAllSystems (
+        system:
+        let
+        nixvim' = nixvim.legacyPackages.${system};
+        nvim = nixvim'.makeNixvim config;
+        in
+        {
+          inherit nvim;
+          default = nvim;
+        }
+      );
+    };
     {
       nixosConfigurations = {
         desktop = nixpkgs.lib.nixosSystem {
