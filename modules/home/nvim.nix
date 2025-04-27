@@ -1,9 +1,9 @@
-/* { pkgs, inputs, ... }:
+{ pkgs, inputs, ... }:
 {
   imports = [ inputs.nvf.homeManagerModules.default ];
 
   programs.neovim = {
-    enable = true;
+    enable = false;
     vimAlias = true;
   };
 
@@ -143,4 +143,4 @@
       };
     };
   };
-} */
+}
