@@ -172,7 +172,7 @@
         # screenshot
         ",Print, exec, screenshot --copy"
         "$mainMod, Print, exec, screenshot --save"
-        "$mainMod SHIFT, Print, exec, screenshot --swappy"
+        "$mainMod SHIFT, P, exec, screenshot --swappy"
 
         # switch focus
         "$mainMod, left,  movefocus, l"
@@ -376,7 +376,8 @@
     };
 
     extraConfig = "
-      monitor=,preferred,auto,auto
+      monitor=DP-1,3440x1440@144,auto,auto
+      monitor=DP-2,2560x1440@144,auto,auto
 
       xwayland {
         force_zero_scaling = true
