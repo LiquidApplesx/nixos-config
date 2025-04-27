@@ -11,6 +11,7 @@
     gamescope
     protontricks
     # inputs.nix-gaming.packages.${pkgs.system}.wine-ge
+    steam-run
 
     ## Minecraft
     # prismlauncher
