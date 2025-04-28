@@ -78,8 +78,7 @@ in
     gnome-disk-utility
     ldtk                              # 2D level editor
     tiled                             # tile map editor
-    libreoffice
-    microsoft-edge 
+    libreoffice 
     nix-prefetch-github
     obs-studio
     pavucontrol                       # pulseaudio volume controle (GUI)
@@ -87,7 +86,6 @@ in
     gnome-calculator                  # calculator
     mission-center                    # GUI resources monitor
     soundwireserver
-    teams-for-linux
     thunderbird
     vlc
     winetricks
