@@ -38,7 +38,7 @@
 
   time.timeZone = "America/New_York";
   i18n.defaultLocale = "en_US.UTF-8";
-  i18n.extraLocale = "ja_JP.UTF-8";
+  i18n.supportedLocales = ["ja_JP.UTF-8/UTF-8" "en_US.UTF-8/UTF-8"];
   nixpkgs.config.allowUnfree = true;
   system.stateVersion = "24.05";
 }
