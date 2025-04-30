@@ -4,15 +4,15 @@
 
   programs.neovim = {
     enable = false;
-    vimAlias = true;
+    vimAlias = false;
   };
 
   programs.nvf = {
     enable = false;
 
     settings.vim = {
-      vimAlias = true;
-      viAlias = true;
+      vimAlias = false;
+      viAlias = false;
 
       theme = {
         enable = true;
