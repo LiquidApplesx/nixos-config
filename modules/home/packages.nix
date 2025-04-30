@@ -72,6 +72,7 @@ in
 
     ## GUI Apps
     audacity
+    azahar
     bleachbit                         # cache cleaner
     filezilla
     gimp
@@ -85,6 +86,7 @@ in
     pitivi                            # video editing
     gnome-calculator                  # calculator
     mission-center                    # GUI resources monitor
+    mullvad-vpn
     soundwireserver
     vlc
     winetricks
