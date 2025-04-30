@@ -3,12 +3,12 @@
   imports = [ inputs.nvf.homeManagerModules.default ];
 
   programs.neovim = {
-    enable = true;
+    enable = false;
     vimAlias = true;
   };
 
   programs.nvf = {
-    enable = true;
+    enable = false;
 
     settings.vim = {
       vimAlias = true;

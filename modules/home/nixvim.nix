@@ -1,7 +1,7 @@
 { pkgs, inputs, ... }:
 {
    programs.nixvim = {
-    enable = true;
+    enable = false;
 
     colorschemes.catppuccin.enable = true;
     plugins = {
