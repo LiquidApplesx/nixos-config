@@ -68,8 +68,7 @@ in
     cbonsai                           # terminal screensaver
     cmatrix
     cargo
-    luarocks
-    npm 
+    luarocks 
     pipes                             # terminal screensaver
     sl
     tty-clock                         # cli clock
