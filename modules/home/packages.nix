@@ -86,7 +86,6 @@ in
     gnome-calculator                  # calculator
     mission-center                    # GUI resources monitor
     soundwireserver
-    thunderbird
     vlc
     winetricks
     wineWowPackages.wayland
